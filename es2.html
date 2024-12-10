@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto XYZ - Modello 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 60%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Auto XYZ - Modello 2024</h1>
+    </header>
+
+    <section>
+        <img src="https://www.example.com/auto-xyz.jpg" alt="Auto XYZ" />
+    </section>
+
+    <section>
+        <h2>Prezzi per modello e tipologia di alimentazione</h2>
+        <table>
+            <tr>
+                <th>Modello</th>
+                <th>Alimentazione</th>
+                <th>Prezzo</th>
+            </tr>
+            <tr>
+                <td>XYZ 1000</td>
+                <td>Benzina</td>
+                <td>€20,000</td>
+            </tr>
+            <tr>
+                <td>XYZ 1000</td>
+                <td>Diesel</td>
+                <td>€22,000</td>
+            </tr>
+            <tr>
+                <td>XYZ 1000</td>
+                <td>IBRIDA</td>
+                <td>€24,000</td>
+            </tr>
+            <tr>
+                <td>XYZ 2000</td>
+                <td>Benzina</td>
+                <td>€25,000</td>
+            </tr>
+            <tr>
+                <td>XYZ 2000</td>
+                <td>Diesel</td>
+                <td>€27,000</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Optional disponibili</h2>
+        <ul>
+            <li>Clima automatico</li>
+            <li>Sistema di navigazione</li>
+            <li>Park Assist</li>
+            <li>Fari LED</li>
+            <li>Interni in pelle</li>
+            <li>Sistema audio premium</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Punti di forza del modello XYZ 1000</h2>
+        <p>
+            L'auto XYZ 1000 si distingue per la sua eccellente efficienza nei consumi, un design moderno e
+            aerodinamico, e tecnologie all'avanguardia che garantiscono una guida sicura e confortevole. 
+            Grazie ai sistemi di assistenza alla guida come il lane assist e il cruise control adattivo, 
+            questa vettura è perfetta per chi cerca performance e sicurezza.
+        </p>
+    </section>
+
+    <section>
+        <h2>Concessionaria autorizzata</h2>
+        <p>
+            Per maggiori informazioni o per prenotare una prova su strada, visita la nostra <a href="https://www.concessionaria-example.com" target="_blank">concessionaria ufficiale</a>.
+        </p>
+    </section>
+
+    <section>
+        <h2>Modulo di richiesta informazioni</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="concessionaria">Nome della concessionaria visitata:</label><br>
+            <input type="text" id="concessionaria" name="concessionaria" required><br><br>
+
+            <label for="trattamento_dati">
+                <input type="checkbox" id="trattamento_dati" name="trattamento_dati" required>
+                Acconsento al trattamento dei dati personali.
+            </label><br><br>
+
+            <label for="modello_interesse">Modello di interesse:</label><br>
+            <select id="modello_interesse" name="modello_interesse" required>
+                <option value="XYZ1000">XYZ 1000</option>
+                <option value="XYZ2000">XYZ 2000</option>
+                <option value="XYZ3000">XYZ 3000</option>
+            </select><br><br>
+
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+</body>
+</html>

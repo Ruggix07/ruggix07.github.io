@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo di Registrazione</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            height: 100px;
+        }
+        .radio-group, .checkbox-group {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Modulo di Registrazione</h2>
+
+<form action="#" method="POST" enctype="multipart/form-data">
+    <label for="cognome">Cognome</label>
+    <input type="text" id="cognome" name="cognome" required>
+
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="data_di_nascita">Data di Nascita</label>
+    <input type="date" id="data_di_nascita" name="data_di_nascita" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="regione">Regione</label>
+    <select id="regione" name="regione" required>
+        <option value="">Seleziona Regione</option>
+        <option value="Lazio">Lazio</option>
+        <option value="Lombardia">Lombardia</option>
+        <option value="Campania">Campania</option>
+        <option value="Sicilia">Sicilia</option>
+        <option value="Toscana">Toscana</option>
+        <!-- Aggiungere altre regioni se necessario -->
+    </select>
+
+    <div class="radio-group">
+        <label>Genere</label>
+        <label for="maschio">Maschio</label>
+        <input type="radio" id="maschio" name="genere" value="maschio" required>
+        
+        <label for="femmina">Femmina</label>
+        <input type="radio" id="femmina" name="genere" value="femmina" required>
+    </div>
+
+    <div class="checkbox-group">
+        <label for="privacy">Acconsento alla privacy</label>
+        <input type="checkbox" id="privacy" name="privacy" required>
+    </div>
+
+    <label for="note">Note</label>
+    <textarea id="note" name="note"></textarea>
+
+    <label for="cv">Invia CV</label>
+    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+    <button type="submit">Invia</button>
+</form>
+
+</body>
+</html>

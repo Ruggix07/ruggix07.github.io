@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabella di Valutazioni</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        .negativo {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabella delle Valutazioni degli Studenti</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Nome Studente</th>
+                <th colspan="2">Valutazione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>francesco borghetti</td>
+                <td>Matematica</td>
+                <td class="negativo">4</td>
+            </tr>
+            <tr>
+                <td>alessio ruggiero</td>
+                <td>Italiano</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>pippo inzaghi</td>
+                <td>Inglese</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>cristiano ronaldo</td>
+                <td>Storia</td>
+                <td class="negativo">3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

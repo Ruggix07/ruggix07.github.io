@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Favicon</title>
+  <link rel="icon" type="image/svg+xml" href="availability-svgrepo-com.svg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      margin: 40px;
+    }
+
+    .container-box {
+      display: flex;
+      justify-content: center;
+      gap: 100px; 
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .box {
+      border: 3px solid black;
+      width: 350px;
+      height: 450px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.2);
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-box">
+  <div class="box">
+    <h2>Contatti</h2>
+    <p>Telefono: +39345646587 <br><span class="glyphicon glyphicon-earphone"></span></p>
+    <p>Email: ruggiero@gmail.com <br><span class="glyphicon glyphicon-envelope"></span></p>
+  </div>
+
+  <div class="box">
+    <h2>Azioni</h2>
+    <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+    <p>Su un bottone:
+      <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </p>
+    <p>Bottone stilizzato:
+      <button type="button" class="btn btn-info">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </p>
+    <p>Print: <span class="glyphicon glyphicon-print"></span></p>
+    <p>
+      <a href="#" class="btn btn-success btn-lg">
+        <span class="glyphicon glyphicon-print"></span> Print
+      </a>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

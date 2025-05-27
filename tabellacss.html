@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabella Semplice</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+      font-size: 1rem;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+
+    tbody tr:nth-child(odd) td {
+      background-color: #f9f9f9;
+    }
+
+    tbody tr:nth-child(even) td {
+      background-color: #e0e0e0;
+    }
+
+    td {
+      cursor: pointer;
+      outline: none;
+    }
+
+    td:hover {
+      background-color: #66bb6a;
+      transform: scale(1.05);
+    }
+
+    td:focus {
+      background-color: #009688;
+      color: white;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Tabella Interattiva Semplice</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Età</th>
+        <th>Città</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td tabindex="0">Luca</td><td tabindex="0">Rossi</td><td tabindex="0">28</td><td tabindex="0">Roma</td></tr>
+      <tr><td tabindex="0">Giulia</td><td tabindex="0">Bianchi</td><td tabindex="0">34</td><td tabindex="0">Milano</td></tr>
+      <tr><td tabindex="0">Marco</td><td tabindex="0">Verdi</td><td tabindex="0">45</td><td tabindex="0">Napoli</td></tr>
+      <tr><td tabindex="0">Sara</td><td tabindex="0">Neri</td><td tabindex="0">22</td><td tabindex="0">Torino</td></tr>
+      <tr><td tabindex="0">Anna</td><td tabindex="0">Galli</td><td tabindex="0">30</td><td tabindex="0">Firenze</td></tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
